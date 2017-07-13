@@ -14,7 +14,6 @@ function logtype(logType:string) {
         //old Method reference as a temp variable
         var orignalMethod=descriptor.value;
         descriptor.value=modifiedMethod;
-        //console.log(descriptor);
         //spread using spread operator converts into the parameter
         function modifiedMethod(...args:any[]){
             //invoke the orignal after monkey patching

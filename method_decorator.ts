@@ -1,5 +1,5 @@
 function get(relativeURL:string) {
-    //dec 
+    //trigger the decorator 
     console.log("get() deocrator: evaluated");
     return function (target, propertyKey: string, descriptor: PropertyDescriptor) {
         console.log(relativeURL);
@@ -18,12 +18,12 @@ function get(relativeURL:string) {
         return descriptor;
     }
 }
-class C {
+class Emp {
     @get('/list')
     getEmployee(data:any) {
         console.log("inside the method",data);
         return "Hi";
     }
 }
-var c=new C();
+var c=new Emp();
 c.getEmployee({data:'value'});

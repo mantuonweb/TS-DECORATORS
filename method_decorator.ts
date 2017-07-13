@@ -4,7 +4,7 @@ function get(relativeURL:string) {
     return function (target, propertyKey: string, descriptor: PropertyDescriptor) {
         console.log(relativeURL);
         var self=this;
-        //Old Method reference as a temp variable
+        //old Method reference as a temp variable
         var orignalMethod=descriptor.value;
         descriptor.value=modifiedMethod;
         //spread using spread operator converts into the parameter

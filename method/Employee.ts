@@ -1,5 +1,5 @@
 //Level for logging
-var currentRole="employee";
+var currentRole="admin";//"employee";
 //function that return a mixing function
 function role(roleType:string) {
     //mixing function

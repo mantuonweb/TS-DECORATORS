@@ -14,7 +14,7 @@ function get(relativeURL:string) {
             args[0].url="http://172.75.87.116/"+relativeURL;
             orignalMethod.apply(self,args);
         }
-        //return modified one
+        //return modified one method
         return descriptor;
     }
 }

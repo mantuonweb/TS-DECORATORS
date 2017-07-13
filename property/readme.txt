@@ -1,0 +1,1 @@
+Contains some example to explain property decorators

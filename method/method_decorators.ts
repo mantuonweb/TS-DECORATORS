@@ -3,12 +3,12 @@ class Dog {
 
     constructor() {}
 
-    @log
+    @log1
     setBreed(breed: string) { 
         this.breed=breed;
     }
 }
-function log(target: any, key: string, descriptor: any) {
+function log1(target: any, key: string, descriptor: any) {
 
     // store original descriptor method var 
     let originalMethod = descriptor.value;

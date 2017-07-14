@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "outDir":"js",
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",

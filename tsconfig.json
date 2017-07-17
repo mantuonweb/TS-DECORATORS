@@ -8,6 +8,8 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
+    "allowJs": false,
+    "module": "commonjs",
     "lib": [
       "es2016",
       "dom"

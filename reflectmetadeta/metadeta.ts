@@ -1,5 +1,5 @@
 import "reflect-metadata";
-
+//https://www.typescriptlang.org/docs/handbook/integrating-with-build-tools.html#browserify
 function serializeWith(serializer: (input: any) => string) : (target: any, propertyKey: string) => void {
     return function(target: any, propertyKey: string) {
         console.log("serializeWith called: adding metadata");
